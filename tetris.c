@@ -23,7 +23,7 @@ struct boardCell{
 	int onoff;
 };
 
-/** This removes the console window **/
+/** This removes the console window in windows**/
 #pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
 
 struct boardCell theBoard[20][40];
