@@ -30,18 +30,16 @@ struct boardCell
 #pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
 
 struct boardCell theBoard[20][40];
-int gameMode = 1;
+int gameMode = 1;                                    // 1 = menu, 2 = game
 int gameInProgress = 0;
 int anchorX, anchorY = 1;
 int mouseX, mouseY = 1;
 int stretchX, stretchY = 1;
 int pausedMode = 1;
 int currScore = 0;
-int afterDrop, beforeDrop;
 int pieceColour;
 char pieceColourStr[10];
 int blue, green, red, yellow, darkgrey, white, black, orange, purple, rainbow, decidePiece;
-int rainbowBlock;
 int border1;
 int border2;
 int totNumOther;
@@ -693,7 +691,6 @@ void initNewPiece ()
     currPieceNo = newPieceNo;
     newPieceNo = rand () % 7;
     loadNewPiece (newPieceNo, 0, 2);
-    //decide();
     currScore += 50;
 }
 
