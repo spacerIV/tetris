@@ -2,8 +2,15 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
-#include <GLUT/glut.h>
-#include <OpenGL/gl.h>
+
+#ifdef __APPLE__
+    #include <GLUT/glut.h>
+    #include <OpenGL/gl.h>
+#elif __linux
+    #include <GL/freeglut.h>
+    #include <GL/gl.h>
+    #include <GL/glu.h>
+#endif
 
 struct piece
 {
@@ -1173,7 +1180,7 @@ drawStartStuff ()
     // The rotating tetrominos on the top of the start screen 
     // Solid part..
     glPolygonMode (GL_FRONT_AND_BACK, GL_FILL);
-    glEnable (GL_LIGHTING);
+    //glEnable (GL_LIGHTING);
     
     loadNewPiece (0, 0, 2); glColor4f (1.0, 1.0, 1.0, 0.01); drawActivePiece (3, 38, 3);
     loadNewPiece (1, 0, 2); glColor4f (1.0, 1.0, 0.0, 0.01); drawActivePiece (7, 38, 3);
@@ -1230,7 +1237,7 @@ void renderGameScreen ()
     {
         glEnable (GL_LIGHTING);
         glEnable (GL_LIGHT0);
-        glDisable (GL_LIGHT1);
+        glEnable (GL_LIGHT1);
     }
     if (isBlendMode)
     {

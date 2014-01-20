@@ -11,6 +11,6 @@ Written quickly as a student, and it shows!
 Something like: gcc -o tetris -framework glut -framework OpenGL tetris.c
 
 ### Linux Compile 
-Something like: gcc -o tetris -lglut -lGL tetris.c
+Something like: gcc -o tetris -lglut -lGLU -std=gnu99 -lm tetris.c
 
 ...and ignore the hundreds of deprecated api warnings.
