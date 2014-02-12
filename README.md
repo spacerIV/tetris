@@ -5,7 +5,7 @@ tetris
 
 ![tetris](https://github.com/vichou/tetris/raw/master/screenshots/tetris-1.png)
 
-Written quickly as a student, and it shows!
+Written quickly as a student ( it shows )
 
 ### OSX Compile 
 
@@ -15,4 +15,4 @@ Written quickly as a student, and it shows!
 
     gcc -o tetris -lglut -lGLU -std=gnu99 -lm tetris.c
 
-...and ignore the hundreds of deprecated api warnings.
+and ignore the hundreds of deprecated api warnings.
