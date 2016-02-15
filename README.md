@@ -3,7 +3,9 @@ tetris
 
 ## with C, OpenGL & GLUT
 
-![tetris](https://github.com/vichou/tetris/raw/master/screenshots/tetris-1.png)
+![game](https://github.com/vichou/tetris/raw/master/screenshots/game.png)
+
+![menu](https://github.com/vichou/tetris/raw/master/screenshots/menu.png)
 
 Written quickly as a student ( it shows )
 
