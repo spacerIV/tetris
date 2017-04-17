@@ -15,6 +15,6 @@ Written quickly as a student ( it shows )
 
 ### Linux Compile 
 
-    gcc -o tetris -lglut -lGLU -std=gnu99 -lm tetris.c
+    gcc -Wall -g tetris.c -lGL -lGLU -lglut -o tetris
 
 and ignore the hundreds of deprecated api warnings.
