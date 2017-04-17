@@ -18,3 +18,4 @@ Written quickly as a student ( it shows )
     gcc -Wall -g tetris.c -lGL -lGLU -lglut -o tetris
 
 and ignore the hundreds of deprecated api warnings.
+
